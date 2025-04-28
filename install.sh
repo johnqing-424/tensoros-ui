@@ -564,8 +564,8 @@ Configuration_Addons() {
 DownloadAndInstallCasaOS() {
     if [ -z "${BUILD_DIR}" ]; then
         ${sudo_cmd} rm -rf ${TMP_ROOT}
-        ${sudo_cmd} mkdir -p ${TMP_ROOT} || Show 1 "Failed to create temporary directory"
-        TMP_DIR=$(mktemp -d -p ${TMP_ROOT} || Show 1 "Failed to create temporary directory")
+        mkdir -p ${TMP_ROOT} || Show 1 "Failed to create temporary directory"
+        TMP_DIR=$(${sudo_cmd} mktemp -d -p ${TMP_ROOT} || Show 1 "Failed to create temporary directory")
 
         pushd "${TMP_DIR}"
 
