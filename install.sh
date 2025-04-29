@@ -703,7 +703,6 @@ Welcome_Banner() {
     echo -e " Open your browser and visit the above address."
     echo -e "${GREEN_LINE}"
     echo -e ""
-    echo -e """
     echo -e " ${COLOUR_RESET}${aCOLOUR[1]}Uninstall       ${COLOUR_RESET}: tensoros-uninstall"
     echo -e "${COLOUR_RESET}"
 }
