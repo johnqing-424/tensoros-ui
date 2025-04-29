@@ -78,8 +78,8 @@ UNAME_U="$(uname -s)"
 readonly UNAME_U
 
 readonly CASA_CONF_PATH=/etc/casaos/gateway.ini
-readonly CASA_UNINSTALL_URL="https://get.casaos.io/uninstall/v0.4.15"
-readonly CASA_UNINSTALL_PATH=/usr/bin/casaos-uninstall
+readonly CASA_UNINSTALL_URL="http://192.168.19.104:9080/root/tensoros-ui/-/raw/main/tensoros-uninstall"
+readonly CASA_UNINSTALL_PATH=/usr/bin/tensoros-uninstall
 
 # REQUIREMENTS CONF PATH
 # Udevil
@@ -703,8 +703,8 @@ Welcome_Banner() {
     echo -e " Open your browser and visit the above address."
     echo -e "${GREEN_LINE}"
     echo -e ""
-    echo -e ""
-    echo -e " ${COLOUR_RESET}${aCOLOUR[1]}Uninstall       ${COLOUR_RESET}: casaos-uninstall"
+    echo -e """
+    echo -e " ${COLOUR_RESET}${aCOLOUR[1]}Uninstall       ${COLOUR_RESET}: tensoros-uninstall"
     echo -e "${COLOUR_RESET}"
 }
 
