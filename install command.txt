@@ -1,0 +1,1 @@
+curl -fsSL https://raw.githubusercontent.com/johnqing-424/tensoros-ui/main/install.sh | sudo bash
